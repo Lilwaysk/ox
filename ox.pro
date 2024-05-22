@@ -19,11 +19,13 @@ SOURCES += \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
+    splash_screen.cpp \
     sql.cpp
 
 HEADERS += \
     login.h \
     mainwindow.h \
+    splash_screen.h \
     sql.h
 
 FORMS += \
