@@ -12,3 +12,13 @@ login::~login()
 {
     delete ui;
 }
+
+void login::on_loginBtn_clicked()
+{
+
+}
+
+void login::on_closeBtn_clicked()
+{
+
+}
