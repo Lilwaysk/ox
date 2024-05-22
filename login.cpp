@@ -22,3 +22,8 @@ void login::on_closeBtn_clicked()
 {
 
 }
+
+void login::on_registerBtn_clicked()
+{
+
+}
