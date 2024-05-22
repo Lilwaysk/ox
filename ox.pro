@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    content.cpp \
+    init_windows.cpp \
     login.cpp \
     login_register.cpp \
     main.cpp \
@@ -24,6 +26,8 @@ SOURCES += \
     sql.cpp
 
 HEADERS += \
+    content.h \
+    init_windows.h \
     login.h \
     login_register.h \
     mainwindow.h \
