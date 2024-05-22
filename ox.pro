@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     login.cpp \
+    login_register.cpp \
     main.cpp \
     mainwindow.cpp \
     splash_screen.cpp \
@@ -24,12 +25,14 @@ SOURCES += \
 
 HEADERS += \
     login.h \
+    login_register.h \
     mainwindow.h \
     splash_screen.h \
     sql.h
 
 FORMS += \
     login.ui \
+    login_register.ui \
     mainwindow.ui
 
 # Default rules for deployment.

@@ -6,9 +6,9 @@
 
 void test()
 {
-    // login l;
-    // l.show();
-    sql s;
+    login l;
+    l.show();
+    // sql s;
 }
 
 int main(int argc, char *argv[])
@@ -19,8 +19,10 @@ int main(int argc, char *argv[])
     Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
     QApplication a(argc, argv);
     MainWindow w;
-    test();
-    w.setWindowIcon(QIcon(":/new/prefix1/pic/pic/1.png"));
-    w.show();
+    login l;
+    l.show();
+    // test();
+    // w.setWindowIcon(QIcon(":/new/prefix1/pic/pic/1.png"));
+    // w.show();
     return a.exec();
 }
