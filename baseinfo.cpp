@@ -1,5 +1,6 @@
 #include "baseinfo.h"
 #include <QLineEdit>
+#include <QTextEdit>
 
 BaseInfo::BaseInfo(QWidget *parent) : QWidget(parent)
 {
@@ -40,4 +41,23 @@ BaseInfo::BaseInfo(QWidget *parent) : QWidget(parent)
     HeadIconLabel->resize(icon.width(),icon.height());
     UpdateHeadBtn = new QPushButton("更新");
     TopRightLayout = new QHBoxLayout();
+    TopRightLayout->setSpacing(20);
+    TopRightLayout->addWidget(HeadLabel);
+    TopRightLayout->addWidget(HeadIconLabel);
+    TopRightLayout->addWidget(UpdateHeadBtn);
+    IntroductionLabel = new QLabel("个人说明:");
+    IntroductionTextEdit = new QTextEdit;
+    RightLayout = new QVBoxLayout();
+    RightLayout->setMargin(10);
+    RightLayout->addLayout(TopRightLayout);
+    RightLayout->addWidget(IntroductionLabel);
+    RightLayout->addWidget(IntroductionTextEdit);
+
+    /*----------------------------------------------*/
+    QGridLayout *mainLayout = new QGridLayout(this);
+    mainLayout->setMargin(15);
+    mainLayout->setSpacing(10);
+    mainLayout->addLayout(LeftLayout,0,0);
+    mainLayout->addLayout(RightLayout,0,1);
+    mainLayout->setSizeConstraint(QLayout::SetFixedSize);
 }

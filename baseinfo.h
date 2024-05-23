@@ -34,7 +34,8 @@ private:
     QLabel *HeadIconLabel;
     QPushButton *UpdateHeadBtn;
     QHBoxLayout *TopRightLayout;
-    QLabel *IntroductionTextEdit;
+    QLabel *IntroductionLabel;
+    QTextEdit *IntroductionTextEdit;
     QVBoxLayout *RightLayout;
 };
 
