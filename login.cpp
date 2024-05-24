@@ -49,7 +49,7 @@ void login::on_loginBtn_clicked()
 
 void login::on_closeBtn_clicked()
 {
-
+    this->close();
 }
 
 void login::on_registerBtn_clicked()

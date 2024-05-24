@@ -1,4 +1,5 @@
 #include "init_windows.h"
+#include "login.h"
 
 #include <QSplitter>
 #include <QApplication>
@@ -14,12 +15,18 @@ init_windows::init_windows()
 
 bool init_windows::init_login()
 {
-
+    login *lg = new login;
+    lg->show();
 }
 
 bool init_windows::init_splash()
 {
-    QPixmap pixmap("")
+    QPixmap pixmap(":/new/prefix1/pic/4.png");
+    QSplashScreen splash(pixmap);
+    QMainWindow w;
+    splash.show();
+    _sleep(3000);
+    splash.finish(&w);
 }
 
 bool init_windows::init_content()

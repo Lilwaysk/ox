@@ -1,15 +1,11 @@
 #include "mainwindow.h"
 #include "login.h"
 #include "sql.h"
+#include "init_windows.h"
 
 #include <QApplication>
 
-void test()
-{
-    login l;
-    l.show();
-    // sql s;
-}
+init_windows King;
 
 int main(int argc, char *argv[])
 {
@@ -18,10 +14,8 @@ int main(int argc, char *argv[])
         QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication a(argc, argv);
     MainWindow w;
-    login l;
-    l.show();
-    // test();
-    // w.setWindowIcon(QIcon(":/new/prefix1/pic/pic/1.png"));
-    // w.show();
+    w.setWindowIcon(QIcon(":/new/prefix1/pic/logo.jpg"));
+    King.init_splash();
+    King.init_login();
     return a.exec();
 }
