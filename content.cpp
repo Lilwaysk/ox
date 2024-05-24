@@ -35,8 +35,15 @@ Content::Content(QFrame *parent) : QFrame(parent)
 
     /*整体布局*/
     QVBoxLayout *RightLayout = new QVBoxLayout(this);
-    RightLayout->setMargin(10);
+    RightLayout->setMargin(0);
     RightLayout->setSpacing(6);
     RightLayout->addWidget(stack);
     RightLayout->addLayout(BtnLayout);
+
+    connect(this->CloseBtn,&QPushButton::clicked,this,&Content::closeBtn_click);
+}
+
+void Content::closeBtn_click()
+{
+    this->close();
 }

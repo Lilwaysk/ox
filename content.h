@@ -22,6 +22,8 @@ public:
     Detail *detail;
 signals:
 
+private slots:
+    void closeBtn_click();
 };
 
 #endif // CONTENT_H

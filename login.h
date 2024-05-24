@@ -26,6 +26,7 @@ private slots:
 private:
     Ui::login *ui;
     login_register *zhuce;
+    bool check_data(QString,QString);
 };
 
 #endif // LOGIN_H

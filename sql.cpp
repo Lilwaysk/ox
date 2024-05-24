@@ -41,7 +41,7 @@ void sql::sql_create()
 
 bool sql::sql_insert(QString username, QString password)
 {
-    query.prepare("insert into user(name,age) values(:name,:age)");
+    query.prepare("insert into user(username,password) values(:username,:password)");
     QStringList Userlist;
     Userlist<<username<<password;
     query.addBindValue(Userlist);
@@ -49,4 +49,16 @@ bool sql::sql_insert(QString username, QString password)
         qDebug()<<"数据插入失败： "<<query.lastError().text();
     else
         qDebug()<<"数据插入成功！";
+}
+
+bool sql::sql_query(QString us, QString ps)
+{
+    query.prepare("select user(:us,:ps) from user");
+    QStringList Userlist;
+    Userlist<<us<<ps;
+    query.addBindValue(Userlist);
+    if(!query.execBatch())
+        qDebug()<<"查询失败： "<<query.lastError().text();
+    else
+        qDebug()<<"查询成功！";
 }

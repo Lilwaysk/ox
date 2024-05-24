@@ -25,7 +25,7 @@ SOURCES += \
     login_register.cpp \
     main.cpp \
     mainwindow.cpp \
-    splash_screen.cpp \
+    splash_sreen.cpp \
     sql.cpp
 
 HEADERS += \
@@ -37,7 +37,7 @@ HEADERS += \
     login.h \
     login_register.h \
     mainwindow.h \
-    splash_screen.h \
+    splash_sreen.h \
     sql.h
 
 FORMS += \

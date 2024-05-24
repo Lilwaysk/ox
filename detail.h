@@ -21,7 +21,7 @@ private:
     QLabel *ProvinceLabel;
     QComboBox *ProvinceComboBox;
     QLabel *CityLabel;
-    QLineEdit *CityComboBox;
+    QLineEdit *CityLineEdit;
     QLabel *IntroductLabel;
     QTextEdit *IntroductTextEdit;
     QGridLayout *mainLayout;
