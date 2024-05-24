@@ -5,12 +5,12 @@
 #include <QToolBox>
 #include <QToolButton>
 
-class UserList : public QObject
+class UserList :public QToolBox
 {
     Q_OBJECT
 public:
-    explicit UserList(QObject *parent = nullptr);
-
+    explicit UserList(QWidget *parent = nullptr,Qt::WindowFlags f=0);
+    QToolButton* toolBtn_set(QString,QString);
 signals:
 
 private:

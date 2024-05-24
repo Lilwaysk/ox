@@ -4,6 +4,7 @@
 #include "baseinfo.h"
 #include "contact.h"
 #include "detail.h"
+#include "userlist.h"
 
 #include <QFrame>
 #include <QStackedWidget>
@@ -17,6 +18,7 @@ public:
     QStackedWidget *stack;
     QPushButton *AmendBtn;
     QPushButton *CloseBtn;
+    UserList *userlist;
     BaseInfo *baseInfo;
     Contact *contact;
     Detail *detail;

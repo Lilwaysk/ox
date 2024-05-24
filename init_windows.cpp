@@ -42,6 +42,7 @@ bool init_windows::init_content()
     list->insertItem(0,QObject::tr("基本信息"));
     list->insertItem(1,QObject::tr("联系方式"));
     list->insertItem(2,QObject::tr("详细资料"));
+    list->insertItem(3,QObject::tr("咒术师列表"));
     // list->setStyleSheet("QListWidget::indicator{height:20px;width:20px;}");
     Content *content = new Content(splitterMain);
     QObject::connect(list,SIGNAL(currentRowChanged(int)),content->stack,SLOT(setCurrentIndex(int)));

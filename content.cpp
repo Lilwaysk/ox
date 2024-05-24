@@ -20,10 +20,12 @@ Content::Content(QFrame *parent) : QFrame(parent)
     baseInfo = new BaseInfo();
     contact = new Contact();
     detail = new Detail();
+    userlist = new UserList();
 
     stack->addWidget(baseInfo);
     stack->addWidget(contact);
     stack->addWidget(detail);
+    stack->addWidget(userlist);
 
     /*Init two Btn*/
     AmendBtn = new QPushButton("修改");
