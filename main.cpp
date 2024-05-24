@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication a(argc, argv);
     MainWindow w;
-    w.setWindowIcon(QIcon(":/new/prefix1/pic/logo.jpg"));
+    a.setWindowIcon(QIcon(":/new/prefix1/pic/logo.jpg"));
     King.init_splash();
     King.init_login();
     return a.exec();

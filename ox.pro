@@ -25,6 +25,7 @@ SOURCES += \
     login_register.cpp \
     main.cpp \
     mainwindow.cpp \
+    net.cpp \
     splash_screen.cpp \
     sql.cpp \
     userlist.cpp
@@ -38,6 +39,7 @@ HEADERS += \
     login.h \
     login_register.h \
     mainwindow.h \
+    net.h \
     splash_screen.h \
     sql.h \
     userlist.h

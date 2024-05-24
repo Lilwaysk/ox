@@ -8,8 +8,8 @@ Contact::Contact(QWidget *parent) : QWidget(parent)
     AddrLineEdit = new QLineEdit;
     CodeLabel = new QLabel("Postage:");
     CodeLineEdit = new QLineEdit;
-    MoviTelLabel = new QLabel("Move Phone");
-    MoviTelCheckBox = new QCheckBox("recieve message:");
+    MoviTelLabel = new QLabel("Move Phone:");
+    MoviTelCheckBox = new QCheckBox("recieve message");
     MoviTelLineEdit = new QLineEdit;
     ProTelLabel = new QLabel("Office Phone:");
     ProTelLineEdit = new QLineEdit;

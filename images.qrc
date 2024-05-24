@@ -8,5 +8,7 @@
         <file>pic/5.png</file>
         <file>pic/logo.jpg</file>
         <file>pic/tou1.jpeg</file>
+        <file>pic/saber.gif</file>
+        <file>pic/dynamic.gif</file>
     </qresource>
 </RCC>
